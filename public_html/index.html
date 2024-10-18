@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MTG Application</title>
+   <link href="index.css" rel="stylesheet">
+   <script src="index.js" defer></script>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Magic The Gathering Variant Singles</h1>
+        
+        <button type="submit" id="checkout">
+            <img src="Images/shoppingCart.jpg" alt="checkoutButton" width="50" height="50"><br/>
+            <strong>CheckOut</strong><br>
+            Download Cart<br>to CSV File
+        </button>
+        			
+    </header>
+
+    <main>
+        <fieldset id="mabelField" class="fields">
+            <legend class="legends">Mabel, Heir to Cragflame</legend>
+            
+            <div class="divPictures">  
+                <img src="Images/bloomburrow-variants-299467.png" id="mabelPic" class="pictures" alt="mabel" width="300" height="350">
+            </div>     
+            
+            <div class="details">
+                <table>
+                    <tr>
+                        <td>
+                            Name:
+                        </td>
+                        <td id="mabel" class="names">
+                            Mabel, Heir to Cragflame
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Edition:
+                        </td>
+                        <td>
+                            Bloomborrow Variants
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Type:
+                        </td>
+                        <td>
+                            Legendary Creature - Mouse Soldier
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Rarity:
+                        </td>
+                        <td>
+                            R
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Collector #:
+                        </td>
+                        <td>
+                            0351
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pow/Tuf:
+                        </td>
+                        <td>
+                            3/3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: justify">
+                            Other Mice you control get +1/+1
+                            When Mabel, Heir to Cragflame enters,
+                            create Cragflame, a legendary colorless
+                            Equipment artifact token with "Equipped
+                            creature gets +1/+1 and has vigilance,
+                            trample, and haste" and equip 2.
+                        </td>
+                    </tr>
+                </table>
+            </div>   
+            
+            <div class="forms">
+                <form id="mabelCart" class="theForms">
+                    <label class="price" id="mabelPrice">$88.99</label><br>
+                    <select name="quantity" class="quantity" id="mabelQuantity">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <input type="submit" class="submit"  value="Add to Cart">
+                    <button type="reset" class="trash">
+                        <img src="Images/trashcan.jpeg" alt="trash" width="20" height="20">
+                    </button>
+                </form> 
+            </div>
+            
+        </fieldset>
+        
+        
+        <br>
+        
+        
+        <fieldset id="razorkinField" class="fields">
+            <legend class="legends">Razorkin Needlehead</legend>
+            
+            <div class="divPictures">  
+                <img src="Images/duskmourn-house-of-horror-variants-301426.png" class="pictures" id="razorkinPic" alt="Razorkin" width="300" height="350">
+            </div>     
+            
+            <div class="details">
+                <table>
+                    <tr>
+                        <td>
+                            Name:
+                        </td>
+                        <td id="raz" class="names">
+                            Razorkin Needlehead
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Edition:
+                        </td>
+                        <td>
+                            Duskmoourn: House of Horror<br>Variants
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Type:
+                        </td>
+                        <td>
+                            Creature - Human Assassin
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Rarity:
+                        </td>
+                        <td>
+                            R
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Collector #:
+                        </td>
+                        <td>
+                            0347
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pow/Tuf:
+                        </td>
+                        <td>
+                            2/2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: justify">
+                            Razorkin Needlehead has first strike during your turn.<br>
+                            Whenever an opponent draws a card, Razorkin Needlehead
+                            deals 1 damage to them.
+                        </td>
+                    </tr>
+                </table>
+            </div>   
+            
+            <div class="forms">
+                <form id="razorkinCart" class="theForms">
+                    <label class="price" id="razorkinPrice">$12.99</label><br>
+                    <select name="quantity" class="quantity" id="razorkinQuantity">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <input type="submit" class="submit" value="Add to Cart">
+                    <button type="reset" class="trash">
+                        <img src="Images/trashcan.jpeg" alt="trash" width="20" height="20">
+                    </button>
+                </form> 
+            </div>
+        </fieldset>
+        <br>
+        
+        <div id="divDisplay">
+            <table id="display">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody id='tbody'>
+
+                </tbody>
+            </table>
+        </div>
+        <br>
+        
+        <div id="billing">
+            <form id="billingForm">
+                <label for="fullName">Full Name:</label><br><br>
+                <input type="text" id="fullName" maxlength="40" title="Max Length = 40 char" required>
+                <br><br>
+                <label for="creditCard">Credit Card Number:</label><br><br>
+                <input type="password" id="creditCard" maxlength="16" pattern="^\d{16}$" title="Exactly 16 digits" required>
+                <br><br>
+                <label for="email">Email Address:</label><br><br>
+                <input type="email" id="email" required>
+            </form>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <hr/>
+        <a href="references.html">References</a>
+    </footer>  
+</body>
+</html>

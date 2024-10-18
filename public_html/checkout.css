@@ -1,0 +1,37 @@
+:root {
+    --space-cadet: #34344A;
+    --blue-munsell: #2292A4;
+    --antiflash-white: #F0F0F0;
+    --hunter-green: #26532B;
+    --lemon-lime: #e4ff1a;
+    
+}
+body {
+    background-color: var(--space-cadet);
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+}
+h1 {
+    color: var(--blue-munsell);
+    font-size: 40pt;
+    text-align: center;
+    font-family: georgia, serif;
+}
+#checkoutCart {
+    background-color: var(--antiflash-white);
+}
+
+a {
+    text-decoration: none;
+    background-color: var(--antiflash-white);
+    float: right;
+    font-size: 20px; 
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}

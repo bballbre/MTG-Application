@@ -1,0 +1,156 @@
+:root {
+    --space-cadet: #34344A;
+    --blue-munsell: #2292A4;
+    --antiflash-white: #F0F0F0;
+    --hunter-green: #26532B;
+    --lemon-lime: #e4ff1a;
+    
+}
+body {
+    background-color: var(--space-cadet);
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+}
+h1 {
+    color: var(--blue-munsell);
+    font-size: 40pt;
+    text-align: center;
+    font-family: georgia, serif;
+}
+
+.fields {
+    clear: right;
+    background-color: var(--antiflash-white);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*height: 550px;*/
+}
+
+.legends  {
+    font-weight: bold;
+    background-color: var(--blue-munsell);
+    color: var(--space-cadet);
+    font-size: 28pt;
+    border-radius: 10px;
+}
+
+/*.newCard {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px 10px;
+    justify-content: space-evenly;
+    align-content: center;
+}*/
+
+div.divPictures {
+    margin-top: 10px;
+}
+
+div.details {
+    background-color: var(--space-cadet);
+    color: var(--antiflash-white);
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 350px;
+    max-width: 300px;
+    font-family: georgia, serif;
+    overflow: scroll;
+
+}
+
+table {
+    padding: 20px;
+}
+
+div.forms {
+    margin-top: 10px;
+    background-color: var(--hunter-green);
+    padding: 25px;
+    width: 155px;
+    border-style: ridge;
+    border-radius: 10px;
+    color: var(--lemon-lime);
+    height: 75px;
+    text-align: center;
+
+}
+label.price {
+    font-size: 36px;
+}
+
+#billing {
+    background-color: var(--blue-munsell);
+    color: black;
+    border-style: solid;
+    padding: 10px;
+    width: 50%;
+    border: ridge;
+    border-radius: 10px;
+    position: relative;
+}
+#billing label {
+    background-color: var(--space-cadet);
+    color: var(--antiflash-white);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#billing input:valid {
+    background-color: #ddffdd;
+}
+#billing input:invalid {
+    background-color: #ffdddd;
+}
+
+button.trash {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px;
+    text-align: center;
+}
+#checkout {
+    background-color: white;
+    position: relative;
+    margin-bottom: 10px;
+    float: right;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    background-color: var(--antiflash-white);
+    float: right;
+    font-size: 20px; 
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#display {
+    background-color: var(--blue-munsell);
+    color: black;
+    border-style: solid;
+    padding: 10px;
+    width: 51%;
+    text-align: center;
+    border: ridge;
+    border-radius: 10px;
+}
+
+#display th {
+    background-color: var(--space-cadet);
+    color: var(--antiflash-white);
+}
+
+/* 
+    Created on : Oct 2, 2024, 3:04:49 PM
+    Author     : bolling.breanna
+*/
+

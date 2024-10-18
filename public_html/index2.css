@@ -1,0 +1,99 @@
+body {
+    background-color: #34344A;
+    font-family: 'Times New Roman', monospace;
+}
+h1 {
+    color: #2292A4;
+    font-size: 40pt;
+    text-align: center;
+}
+
+.checkout {
+    float: right;
+}
+
+.fields {
+    
+    background-color: #F0F0F0;
+    height: 550px;
+}
+
+.legends  {
+    font-weight: bold;
+    background-color: #2292A4;
+    color: #34344A;
+    font-size: 28pt;
+}
+
+div.pictures {
+    position: relative;
+    bottom: -75px;
+}
+
+div.details {
+    background-color: #34344A;
+    color: #F0F0F0;
+    position: relative;
+    left: 350px;
+    top: -280px;
+    width: 400px;
+    border-radius: 10px;
+    height: 350px;
+}
+
+table {
+    padding: 20px;
+    
+}
+
+div.prices {
+    position: relative;
+    left: 850px;
+    top: -605px;
+    color: yellow;
+    background-color: #386641;
+    font-size: 36px;
+    position: relative;
+    display: inline;
+    border-style: ridge;
+    border-radius: 10px;
+    padding: 25px;
+    
+}
+
+div.forms {
+    position: relative;
+    left: 885px;
+    top: -580px;
+    background-color: #34344A;    
+    width: 75px;
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+select.quantity {
+    float: right;
+}
+
+button.trash {
+    background-color: white;
+}
+a {
+    text-decoration: none;
+    background-color: #F0F0F0;
+    float: right;
+    font-size: 20px; 
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#checkout {
+    background-color: white;
+    position: relative;
+}
