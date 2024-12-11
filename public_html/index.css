@@ -1,39 +1,41 @@
 :root {
-    --space-cadet: #34344A;
-    --blue-munsell: #2292A4;
-    --antiflash-white: #F0F0F0;
-    --hunter-green: #26532B;
-    --lemon-lime: #e4ff1a;
-    
+  --space-cadet: #34344a;
+  --blue-munsell: #2292a4;
+  --antiflash-white: #f0f0f0;
+  --hunter-green: #26532b;
+  --lemon-lime: #e4ff1a;
 }
 body {
-    background-color: var(--space-cadet);
-    font-family: 'Times New Roman', serif;
-    font-size: 16px;
+  background-color: var(--space-cadet);
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
 }
 h1 {
-    color: var(--blue-munsell);
-    font-size: 40pt;
-    text-align: center;
-    font-family: georgia, serif;
+  color: var(--blue-munsell);
+  font-size: 40pt;
+  text-align: center;
+  font-family: georgia, serif;
 }
 
 .fields {
-    clear: right;
-    background-color: var(--antiflash-white);
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-    /*height: 550px;*/
+  clear: right;
+  background-color: var(--antiflash-white);
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*height: 550px;*/
 }
 
-.legends  {
-    font-weight: bold;
-    background-color: var(--blue-munsell);
-    color: var(--space-cadet);
-    font-size: 28pt;
-    border-radius: 10px;
+.legends {
+  font-weight: bold;
+  background-color: var(--blue-munsell);
+  color: var(--space-cadet);
+  font-size: 28pt;
+  border-radius: 10px;
 }
 
 /*.newCard {
@@ -42,115 +44,114 @@ h1 {
     gap: 10px 10px;
     justify-content: space-evenly;
     align-content: center;
-}*/
+  }*/
 
 div.divPictures {
-    margin-top: 10px;
+  margin-top: 10px;
+  grid-column-start: 1;
 }
 
 div.details {
-    background-color: var(--space-cadet);
-    color: var(--antiflash-white);
-    margin-top: 10px;
-    border-radius: 10px;
-    height: 350px;
-    max-width: 300px;
-    font-family: georgia, serif;
-    overflow: scroll;
-
+  background-color: var(--space-cadet);
+  color: var(--antiflash-white);
+  margin-top: 10px;
+  border-radius: 10px;
+  max-width: 550px;
+  font-family: georgia, serif;
+  overflow: scroll;
+  grid-column: 1 / span 2;
 }
 
 table {
-    padding: 20px;
+  padding: 20px;
 }
 
 div.forms {
-    margin-top: 10px;
-    background-color: var(--hunter-green);
-    padding: 25px;
-    width: 155px;
-    border-style: ridge;
-    border-radius: 10px;
-    color: var(--lemon-lime);
-    height: 75px;
-    text-align: center;
-
+  margin-top: 100px;
+  background-color: var(--space-cadet);
+  padding: 25px;
+  width: 150px;
+  border-style: ridge;
+  border-radius: 10px;
+  color: var(--lemon-lime);
+  height: 75px;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
 label.price {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 #billing {
-    background-color: var(--blue-munsell);
-    color: black;
-    border-style: solid;
-    padding: 10px;
-    width: 50%;
-    border: ridge;
-    border-radius: 10px;
-    position: relative;
+  background-color: var(--blue-munsell);
+  color: black;
+  border-style: solid;
+  padding: 10px;
+  width: 50%;
+  border: ridge;
+  border-radius: 10px;
+  position: relative;
 }
 #billing label {
-    background-color: var(--space-cadet);
-    color: var(--antiflash-white);
-    padding: 5px;
-    border-radius: 5px;
+  background-color: var(--space-cadet);
+  color: var(--antiflash-white);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 #billing input:valid {
-    background-color: #ddffdd;
+  background-color: #ddffdd;
 }
 #billing input:invalid {
-    background-color: #ffdddd;
+  background-color: #ffdddd;
 }
 
 button.trash {
-    background-color: white;
-    border-radius: 5px;
-    padding: 0px;
-    text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0px;
+  text-align: center;
 }
 #checkout {
-    background-color: white;
-    position: relative;
-    margin-bottom: 10px;
-    float: right;
-    border-radius: 10px;
+  background-color: white;
+  position: relative;
+  margin-bottom: 10px;
+  float: right;
+  border-radius: 10px;
 }
 
 a {
-    text-decoration: none;
-    background-color: var(--antiflash-white);
-    float: right;
-    font-size: 20px; 
-    text-align: center;
-    width: 100px;
-    border-radius: 10px;
+  text-decoration: none;
+  background-color: var(--antiflash-white);
+  float: right;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+  border-radius: 10px;
 }
 
 a:hover {
-    text-decoration: underline;
-    font-weight: bold;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 #display {
-    background-color: var(--blue-munsell);
-    color: black;
-    border-style: solid;
-    padding: 10px;
-    width: 51%;
-    text-align: center;
-    border: ridge;
-    border-radius: 10px;
+  background-color: var(--blue-munsell);
+  color: black;
+  border-style: solid;
+  padding: 10px;
+  width: 51%;
+  text-align: center;
+  border: ridge;
+  border-radius: 10px;
 }
 
 #display th {
-    background-color: var(--space-cadet);
-    color: var(--antiflash-white);
+  background-color: var(--space-cadet);
+  color: var(--antiflash-white);
 }
-
 /* 
     Created on : Oct 2, 2024, 3:04:49 PM
     Author     : bolling.breanna
 */
-
